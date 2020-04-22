@@ -85,6 +85,7 @@ const getMorePosts = async () => {
             shadowLarge: true,
             width: '400px',
             imageHeight: '400px',
+            marginBottom: '50px',
           }}
           loadMoreText='More Posts'
           loadMoreTextLoading='Loading...'
