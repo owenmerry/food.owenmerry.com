@@ -19,7 +19,7 @@ const [statePage, setStatePage] = useState({});
 //getData
 useEffect(() => {
 const getData = async () => {
-  const resMedia = await fetch('http://local.api.owenmerry.com/api/photos/instagram/media?token='+ instagramToken +'');
+  const resMedia = await fetch('http://api.owenmerry.com/api/photos/instagram/media?token='+ instagramToken +'');
   const dataMedia = await resMedia.json();
 
   setData(dataMedia);
@@ -58,7 +58,7 @@ const getMorePosts = async () => {
   setStateMorePostsLoading(true);
 
   // get data
-  const resMedia = await fetch('http://local.api.owenmerry.com/api/photos/instagram/media/next/'+ statePage.nextPageToken +'?token='+ instagramToken +'');
+  const resMedia = await fetch('http://api.owenmerry.com/api/photos/instagram/media/next/'+ statePage.nextPageToken +'?token='+ instagramToken +'');
   const dataMediaNext = await resMedia.json();
 
   //set state
