@@ -81,6 +81,7 @@ const getMorePosts = async () => {
         <CardList 
           loading={stateListLoading}
           items={stateList}
+          grid='1'
           cardSettings={{
             shadowLarge: true,
             width: '400px',
